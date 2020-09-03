@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Display Page</title>
+    <style>
+        p.top {
+            width:120px; 
+            min-height: 20px;
+            text-align: center;
+            border-style: solid;
+            border-color: green;
+            margin: 0px auto;
+            margin-top: 100px;
+            padding: 25px 45px;
+        }
+        h1.main {
+            width: 400px;
+            min-height: 80px;
+            margin: 0px auto;
+            margin-top: 50px;
+            text-align: center;
+            border-color: blue; 
+            border-style: solid;
+            padding: 35px 65px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <p class="top">
+            Blog Number: {{blog_id}}
+            The Current Time and Date:
+        </p>
+    </div>
+    <div id="middle">
+        <h1 class="main">
+            Current Time: {{time}} 
+        </h1>
+    </div>
+</body>
+</html>
